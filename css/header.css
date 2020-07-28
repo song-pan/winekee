@@ -1,131 +1,131 @@
 .header {
-	height: 135px;
-	background: url(../images/head_bg0.jpg);
-	box-shadow: 0 0 10px #50412d;
+  height: 135px;
+  background: url(../images/head_bg0.jpg);
+  box-shadow: 0 0 10px #50412d;
 }
 .header a {
-	color: #fff;
+  color: #fff;
 }
 .header a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 .h-top {
-	position: relative;
-	width: 1200px;
-	height: 30px;
-	line-height: 30px;
-	margin: 0 auto;
+  position: relative;
+  width: 1200px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
 }
-.t-left  {
-	float: left;
-	color: #575454;
-	padding-left: 10px;
+.t-left {
+  float: left;
+  color: #575454;
+  padding-left: 10px;
 }
 .t-left a {
-	padding-right: 5px;
-	padding-left: 5px;
-	font-size: 12px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 12px;
 }
 /* header 的最顶部的右边 */
 .t-right {
-	display: flex;
-	justify-content: flex-end;
-	color: #575454;
+  display: flex;
+  justify-content: flex-end;
+  color: #575454;
 }
-.t-right>div:first-child a {
-	padding-right: 10px;
+.t-right > div:first-child a {
+  padding-right: 10px;
 }
-.t-right>div:first-child span {
-	display: inline-block;
-	padding:0 10px;
-	line-height: 15px;
-	color: #fff;
-	border-right: 1px solid #575454;
-	border-left: 1px solid #575454;
+.t-right > div:first-child span {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 15px;
+  color: #fff;
+  border-right: 1px solid #575454;
+  border-left: 1px solid #575454;
 }
-.t-right>div:last-child {
-		width: 194px;
+.t-right > div:last-child {
+  width: 194px;
 }
 /* 购物车精灵图 */
-.t-right>div:last-child a {
-			text-align: center;
-		  display: inline-block;
-			width: 194px;
-			line-height: 30px;
-			background: url(../images/bg.jpg) -168px -202px no-repeat;
+.t-right > div:last-child a {
+  text-align: center;
+  display: inline-block;
+  width: 194px;
+  line-height: 30px;
+  background: url(../images/bg.jpg) -168px -202px no-repeat;
 }
 .h-body {
-	position: relative;
-	width: 1200px;
-	margin: 0 auto;
-	margin-top: 10px;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
-.h-body>a {
-	display: inline-block;
-	width: 220px;
-	height: 55px;
-	background: url(../images/logo_220.gif) no-repeat;
+.h-body > a {
+  display: inline-block;
+  width: 220px;
+  height: 55px;
+  background: url(../images/logo_220.gif) no-repeat;
 }
 .search {
-	position: relative;
-	left: 120px;
-	display: inline-block;
-	width: 500px;
+  position: relative;
+  left: 120px;
+  display: inline-block;
+  width: 500px;
 }
 .search::after {
-	content: "";
-	display: block;
-	clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 .keyword {
-	float: left;
-	width: 413px;
-	height: 33px;
-	border: 3px solid #6a0000;
-	padding: 0 3px;
-	line-height: 33px;
-	font-size: 15px;
+  float: left;
+  width: 413px;
+  height: 33px;
+  border: 3px solid #6a0000;
+  padding: 0 3px;
+  line-height: 33px;
+  font-size: 15px;
 }
 .submit {
-	float: left;
-	width: 65px;
-	height: 33px;
-	line-height: 33px;
-	text-align: center;
-	background-color: #6a0000;
+  float: left;
+  width: 65px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background-color: #6a0000;
 }
 .s-bottom {
-	clear: both;
-	padding-top: 5px;
-	color: #ecd0c7;
+  clear: both;
+  padding-top: 5px;
+  color: #ecd0c7;
 }
 .s-bottom a {
-	color: #ecd0c7;
+  color: #ecd0c7;
 }
 .h-bottom {
-	width: 1200px;
-	height: 35px;
-	margin: 0 auto;
+  width: 1200px;
+  height: 35px;
+  margin: 0 auto;
 }
-.h-bottom ul>li:first-child {
-	background-color: #000;
-	padding:0 60px;
+.h-bottom ul > li:first-child {
+  background-color: #000;
+  padding: 0 60px;
 }
-.h-bottom ul>li:first-child+li {
-	background-color: #000;
+.h-bottom ul > li:first-child + li {
+  background-color: #000;
 }
-.h-bottom ul  li  {
-	font-size: 14px;
+.h-bottom ul li {
+  font-size: 14px;
 }
-.h-bottom ul>li:nth-child(2)~li a {
-	text-align: center;
-	width: 124px;
-	height: 15px;
-	line-height: 15px;
-	padding: 0;
-	margin-top: 10px;
-	border-right: 1px solid #000;
+.h-bottom ul > li:nth-child(2) ~ li a {
+  text-align: center;
+  width: 110px;
+  height: 15px;
+  line-height: 15px;
+  padding: 0;
+  margin-top: 10px;
+  border-right: 1px solid #000;
 }
 .h-bottom li:hover {
-	background-color: #000000;
+  background-color: #000000;
 }
