@@ -7,11 +7,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet"  href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/天猫.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/cssreset.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
-
   <body>
     <iframe
       class="d-block"
@@ -22,7 +21,7 @@
       frameborder="no"
     ></iframe>
     <div class="container-fluid p-0">
-      <div class="section">
+      <div class="section d-flex">
         <div
           class="s-left w-20 border border-dark border-bottom-0 border-top-0"
         >
@@ -81,11 +80,439 @@
           </div>
         </div>
         <div class="s-center">
-          <div class="carousel">
+          <!-- 轮播图 -->
+          <div class="carousel" id="slid" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item"></div>
+              <div class="carousel-item active">
+                <img class="w-100" src="images\a1544770407003.jpg" />
+              </div>
+              <div class="carousel-item">
+                <img class="w-100" src="images\a1591754613283.jpg" />
+              </div>
             </div>
+            <!-- 指示器 -->
+            <div>
+              <ul class="carousel-indicators">
+                <li data-slide-to="0" data-target="#slid" class="active"></li>
+                <li data-slide-to="1" data-target="#slid"></li>
+              </ul>
+            </div>
+            <!-- 左右箭头 -->
+            <a href="#slid" data-slide="prev" class="carousel-control-prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slid" data-slide="next" class="carousel-control-next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
+        </div>
+        <div class="s-right">
+          <img src="images\1563264859410.jpg" />
+        </div>
+      </div>
+      <div class="section top_10">
+        <div class="hot-top border-bottom py-1">
+          热卖精选
+        </div>
+        <div class="hot-content">
+          <ul class="hot-list d-flex flex-wrap">
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378178319_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378218114_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+            <li id="d1">
+              <div class="wine-pic">
+                <img src="images/1545378219164_2_220x360.jpg" />
+                <div id="d2" class="pic-demo">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                </div>
+                <div id="d3" class="pic-demo pic-cart">
+                  <div class="pic-icon"></div>
+                  香槟产区品牌香槟，打造国内性价比第一香槟
+                  <div class="joincart">
+                    <a href=""></a>
+                  </div>
+                </div>
+                <!-- 鼠标滑过事件 -->
+                <script>
+                  d1.onmouseenter = function show_cart() {
+                    d2.style.display = 'none'
+                    d2.nextSibling.nextSibling.style.display = 'block'
+                  }
+
+                  d1.onmouseleave = function h_cart2() {
+                    d3.style.display = 'none'
+                    d3.previousSibling.previousSibling.style.display = 'block'
+                  }
+                </script>
+              </div>
+              <div class="title">
+                <a href="">卡内奇家族珍藏赤霞珠干红葡萄酒</a><br />
+                <a href="">CANEPA FAMIGLIA RESERVE CABERNET SAUVIGNON</a>
+              </div>
+              <div class="price"><span>￥</span>148</div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
