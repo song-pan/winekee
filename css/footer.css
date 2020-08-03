@@ -1,0 +1,55 @@
+body > div {
+  background-color: #efefef;
+}
+.footer {
+  width: 1200px;
+  height: 330px;
+  margin: 0 auto;
+}
+.foot-top {
+  height: 74px;
+  margin: 27px 0;
+  background: url(../images/0051.gif) no-repeat top center;
+}
+.foot-content a {
+  color: #000;
+}
+.foot-content a:hover {
+  text-decoration: none;
+  color: #c00;
+}
+.c-left {
+  width: 852px;
+}
+.c-left li {
+  padding: 2px 0;
+}
+.c-right i {
+  width: 76px;
+  height: 76px;
+  margin: 6px 24px 6px 0;
+  background: url(../images/0051.gif) no-repeat -4px -138px;
+}
+.txt {
+  line-height: 22px;
+}
+.b-top {
+  margin-top: 40px;
+  color: #b22423;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '|';
+}
+.foot-bottom a {
+  color: #000;
+}
+.foot-bottom a:hover {
+  color: #c00;
+  text-decoration: none;
+}
+.foot-bottom p img {
+  vertical-align: baseline;
+}
