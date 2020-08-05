@@ -7,6 +7,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
     <link rel="stylesheet" href="css/cssreset.css" />
     <link rel="stylesheet" href="css/login.css" />
   </head>
@@ -19,34 +20,35 @@
       scrolling="no"
       frameborder="no"
     ></iframe>
-
     <div class="container-fluid p-0">
       <div class="content border">
         <h2 class="title-txt1">
           用户登录 <span class="title-txt2">User Login</span>
         </h2>
-        <div class="login-box border w-100 d-flex">
+        <div class="login-box border-top w-100 d-flex">
           <div class="box-left">
-            <ul class="login-form border-bottom">
-              <li><span>登录账号：</span><input type="text" /></li>
-              <li><span>密码：</span><input type="text" /></li>
+            <ul class="login-form">
+              <li>
+                <span>登录账号：</span><input id="uname" type="text" /><strong
+                  id="uname_msg"
+                ></strong>
+              </li>
+              <li>
+                <span>密码：</span><input id="upwd" type="text" /><strong
+                  id="upwd_msg"
+                ></strong>
+              </li>
               <li>
                 <button class="btn_login">登录</button><a href="">忘记密码？</a>
               </li>
             </ul>
             <div class="login_other">
-              <span class="title">您还可以使用以下帐号登录：</span>
+              <span class="l-title">您还可以使用以下帐号登录：</span>
               <div class="OpenLogin">
-                <a
-                  href="/useralipay.html"
-                  title="用支付宝账号登录"
-                  style="cursor: pointer;"
-                  ><img src="images/alipay.png"
-                /></a>
+                <a href=""><img src="images/alipay.png" /></a>
               </div>
-              <br />
-              <span class="title">免费注册成为红酒客会员，立刻享受：</span>
-              <ul>
+              <span class="l-title">免费注册成为红酒客会员，立刻享受：</span>
+              <ul class="service">
                 <li>
                   原瓶进口保证
                 </li>
@@ -63,15 +65,15 @@
             </div>
           </div>
           <div class="box-right">
-            <div>
+            <div class="bd-bottom">
               <div class="r-txt1 py-3">还不是红酒客用户？</div>
               <p>
                 免费注册成为红酒客会员，立刻享受轻松购物，更多会员优惠等你来拿！
               </p>
+              <a class="btn_reg" href="register.html">
+                注册新用户
+              </a>
             </div>
-            <a class="btn_reg" href="">
-              注册新用户
-            </a>
             <div>
               <a href="">
                 <img src="images/a1394074150513.gif" />
