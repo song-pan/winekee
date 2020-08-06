@@ -5,6 +5,7 @@ USE winekee;
 CREATE TABLE user (
   uid INT PRIMARY KEY AUTO_INCREMENT,
   uname VARCHAR(8) NOT NULL,
-  upwd VARCHAR(16) NOT NULL
+  upwd VARCHAR(16) NOT NULL,
+  email VARCHAR(20) NOT NULL
 );
-INSERT INTO user VALUES(null,'songpan',123456);
+INSERT INTO user VALUES(null,'songpan',123456,"909410530@qq.com");

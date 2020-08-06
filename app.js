@@ -1,6 +1,6 @@
 const express = require('express') //引入express模块
 const app = express() //创建web服务器
-const user = require() //引入路由器对象
+const user = require('./router/user.js') //引入路由器对象
 const bodyParser = require('body-parser') //引入第三方中间件
 app.listen(8080) //设置端口
 app.use(express.static(__dirname + '/html')) //托管静态资源
