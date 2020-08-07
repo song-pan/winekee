@@ -41,5 +41,45 @@ function c_checkPwd() {
   }
 }
 function register() {
-  if()
+  if (!email.value) {
+    alert('邮箱不能为空')
+    email.focus()
+    return
+  }
+
+  if (!upwd.value) {
+    alert('密码不能为空')
+    upwd.focus()
+    return
+  }
+  if (!uname.value) {
+    alert('用户名不能为空')
+    uname.focus()
+    return
+  }
+  if (
+    email_msg.innerHTML == '√' &&
+    uname_msg.innerHTML == '√' &&
+    upwd_msg.innerHTML == '√' &&
+    c_upwd_msg.innerHTML == '√'
+  ) {
+    var xhr = new XMLHttpRequest() //创建异步对象xhr
+    //开启监听  接收响应
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        if (xhr.responseText == 1) {
+          alert('注册成功')
+          location.href = '../login.html'
+        } else {
+          alert('注册失败')
+        }
+      }
+    }
+    xhr.open('post', '/user/register', true)
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded') //bug点  记住  不要=号
+    var formdata = `uname=${uname.value}&upwd=${upwd.value}&email=${email.value}`
+    xhr.send(formdata)
+  } else {
+    alert('输入有误')
+  }
 }

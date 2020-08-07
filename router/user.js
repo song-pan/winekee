@@ -4,7 +4,7 @@ const pool = require('../pool.js') //引入连接池对象
 //添加login路由
 router.get('/login', (req, res) => {
   pool.query(
-    'select * from user where uname=? and upwd=?',
+    'select * from w_user where uname=? and upwd=?',
     [req.query.uname, req.query.upwd],
     (err, result) => {
       if (err) throw err
@@ -18,9 +18,10 @@ router.get('/login', (req, res) => {
 })
 //添加register路由
 router.post('/register', (req, res) => {
-  pool.query('insert into user set ?', [req.body], (err, result) => {
+  var sql = 'insert into w_user set ?'
+  pool.query(sql, [req.body], (err, result) => {
     if (err) throw err
-    if (result.length > 0) {
+    if (result.affectedRows > 0) {
       res.send('1')
     } else {
       res.send('0')

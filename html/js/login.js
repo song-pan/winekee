@@ -18,7 +18,7 @@ function login() {
       if (obj != 0) {
         sessionStorage.setItem('uid', obj[0].uid)
         sessionStorage.setItem('uname', obj[0].uname)
-        location.href = `index.html?uname=${uname.value}`
+        location.href = '../index.html'
       } else {
         alert('用户名或者密码错误')
       }
