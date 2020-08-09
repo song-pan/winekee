@@ -1,0 +1,152 @@
+.section {
+  font-size: 12px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.breadcrumb-item a {
+  color: #000;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+.search_list {
+  margin-top: 15px;
+}
+.search_list > ul > li {
+  height: 40px;
+  line-height: 40px;
+}
+.search_list > ul > li + li {
+  width: 1170px;
+  margin: 0 15px;
+  border-bottom: 1px dashed #ccc;
+}
+.search_list > ul > li:last-child {
+  border: none;
+}
+.search_list > ul > li > span {
+  width: 50px;
+  display: inline-block;
+  text-align: right;
+}
+.search_list > ul > li:first-child > span {
+  display: inline;
+  padding-left: 15px;
+}
+.search_list > ul > li > span + a {
+  margin-left: 20px;
+  color: #fff;
+  background: #b62528;
+  padding: 1px;
+}
+.search_list > ul > li a {
+  margin-left: 35px;
+  color: #000;
+}
+.search_list > ul > li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #b62528;
+  padding: 1px;
+}
+.txt1 {
+  display: block;
+  width: 90px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+.txt1:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.shop_top {
+  margin-top: 15px;
+  border-bottom: 2px solid #000;
+}
+.shop_top > div {
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 200px;
+}
+
+.hot-list li:hover {
+  cursor: pointer;
+}
+.hot-list li {
+  width: 195px;
+  border: 2px solid #fff;
+  padding: 0 6px;
+  margin: 15px 0 0 5px;
+}
+.hot-list li:hover {
+  border: 2px solid #e1dddd;
+}
+.wine-pic {
+  position: relative;
+}
+.wine-pic > img {
+  width: 170px;
+  height: 170px;
+}
+.pic-demo {
+  position: absolute;
+  padding-left: 24px;
+  padding-right: 8px;
+  height: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  color: #fff;
+  background-color: rgba(154, 141, 143, 0.9);
+  cursor: pointer;
+}
+.pic-icon {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  width: 12px;
+  height: 13px;
+  background: url(../images/bg.jpg) 0 -65px no-repeat;
+}
+.pic-cart {
+  display: none;
+  top: 100px;
+  height: 90px !important;
+}
+.joincart a {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 25px;
+  background-image: url(../images/add.gif);
+}
+.title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 35px;
+}
+.title a {
+  text-decoration: none;
+  color: #000;
+}
+.title a:first-child:hover {
+  color: #c00;
+}
+.price {
+  font-size: 30px;
+  color: #8f0100;
+}
+.price span {
+  font-size: 12px;
+}
+.f-bottom {
+  margin-top: 100px;
+}

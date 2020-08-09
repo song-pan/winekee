@@ -28,5 +28,20 @@ router.post('/register', (req, res) => {
     }
   })
 })
+//添加search路由
+router.get('/search', (req, res) => {
+  pool.query(
+    'select * from shop where pname like ?',
+    ['%' + req.query.pname + '%'],
+    (err, result) => {
+      if (err) throw err
+      if (result.length > 0) {
+        res.send(result)
+      } else {
+        res.send('0')
+      }
+    }
+  )
+})
 //导出路由器对象router
 module.exports = router

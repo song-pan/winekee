@@ -24,7 +24,7 @@
           <div class="t-right">
             <div>
               <a href="#">我的账户</a>
-              <span>订酒热线:400-883-1119</span>a
+              <span>订酒热线:400-883-1119</span>
             </div>
             <div>
               <a href="#">购物车</a>
@@ -32,25 +32,34 @@
           </div>
         </div>
         <div class="h-body">
-          <a href="#"></a>
+          <a href="index.html" target="_parent"></a>
           <div class="search">
-            <input class="keyword" type="text" />
-            <a class="submit" href="#">搜索</a>
+            <input class="keyword" id="pname" type="text" />
+            <button class="search_post" id="mypost">
+              搜索
+            </button>
             <div class="s-bottom">
               热门搜索：
               <a href="#">卡内奇</a>
-              <a href="">马代苏</a>
-              <a href="">桑德拉</a>
+              <a href="#">马代苏</a>
+              <a href="#">桑德拉</a>
             </div>
           </div>
         </div>
         <div class="h-bottom">
           <ul class="nav p-0">
             <li class="m-0 nav-item">
-              <a class="nav-link h6 m-0" href="">选酒中心</a>
+              <a
+                class="nav-link h6 m-0"
+                href="search.html?pname="
+                target="_parent"
+                >选酒中心</a
+              >
             </li>
             <li class="m-0 nav-item">
-              <a class="nav-link px-5" href="">首页</a>
+              <a class="nav-link px-5" href="index.html" target="_parent"
+                >首页</a
+              >
             </li>
             <li class="m-0 nav-item">
               <a class="nav-link" href="">品牌馆</a>
@@ -65,5 +74,11 @@
         </div>
       </div>
     </div>
+    <script>
+      var mypost = document.getElementById('mypost')
+      mypost.onclick = function () {
+        parent.location.href = `search.html?pname=${pname.value}`
+      }
+    </script>
   </body>
 </html>

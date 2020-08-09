@@ -88,7 +88,13 @@
   font-size: 15px;
   outline: none;
 }
-.submit {
+.search_post:focus {
+  outline: none;
+}
+.search_post {
+  cursor: pointer;
+  border: none;
+  color: #fff;
   float: left;
   width: 65px;
   height: 33px;
@@ -103,6 +109,9 @@
 }
 .s-bottom a {
   color: #ecd0c7;
+}
+.s-bottom a:hover {
+  color: #fff;
 }
 .h-bottom {
   width: 1200px;
