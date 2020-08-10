@@ -22,7 +22,7 @@
   color: #575454;
   padding-left: 10px;
 }
-.t-left a {
+.t-left > a {
   padding-right: 5px;
   padding-left: 5px;
   font-size: 12px;
@@ -33,10 +33,10 @@
   justify-content: flex-end;
   color: #575454;
 }
-.t-right > div:first-child a {
+.t-right > div:first-child > a {
   padding-right: 10px;
 }
-.t-right > div:first-child span {
+.t-right > div:first-child > span {
   display: inline-block;
   padding: 0 10px;
   line-height: 15px;
@@ -48,12 +48,47 @@
   width: 194px;
 }
 /* 购物车精灵图 */
-.t-right > div:last-child a {
+.t-right > div:last-child > a {
   text-align: center;
   display: inline-block;
   width: 194px;
   line-height: 30px;
   background: url(../images/bg.jpg) -168px -202px no-repeat;
+}
+.shop_car {
+  position: relative;
+}
+.carbox1 {
+  right: 0;
+  top: 30px;
+  border: 2px solid #6a0000;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 1px 1px 2px #999;
+  z-index: 99999;
+  width: 291px;
+}
+.car_pro {
+  cursor: pointer;
+  width: 275px;
+  border-bottom: 1px dashed #575454;
+  margin: 0 8px;
+  padding: 8px 0;
+}
+.car_pic > img {
+  width: 60px;
+  height: 98px;
+}
+.biaoti {
+  color: #86777a !important;
+}
+.single-price {
+  color: #91273b;
+}
+.total-price {
+  text-align: right;
+  color: #91273b;
+  font-weight: bold;
 }
 .h-body {
   position: relative;
