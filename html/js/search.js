@@ -8,7 +8,7 @@ function h_cart(x) {
   x.children[0].children[1].style.display = 'block'
 }
 function search() {
-  var arr = new URLSearchParams(parent.location.search)
+  var arr = new URLSearchParams(location.search)
   var pname = arr.get('pname')
   //创建异步对象
 

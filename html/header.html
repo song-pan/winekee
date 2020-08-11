@@ -32,23 +32,40 @@
               </div>
               <div id="hid_car">
                 <div class="carbox1">
-                  <ul>
+                  <ul class="car_pro">
                     <!-- <li class="text-center text-secondary py-3">
                       购物车中还没有商品，赶紧选购吧！
                     </li> -->
-                    <li class="car_pro d-flex">
-                      <div class="car_pic">
+                    <li class="row no-gutters">
+                      <div class="car_pic col-3">
                         <img src="images/0022.jpg" />
                       </div>
-                      <div>
-                        <a class="biaoti" href="#"
+                      <div class="col-8">
+                        <a class="biaoti" href="javascript:;"
                           >卡内奇家族珍藏卡曼尼干红葡萄酒</a
                         >
                         <br />
-                        <span class="single-price">￥148.00</span
+                        <span class="shop_txt1">￥148.00</span
                         ><em class="text-secondary">X2</em>
-                        <span class="total-price">￥148.00</span>
+                        <span class="total-price shop_txt1">￥148.00</span>
                       </div>
+                      <div class="close_btn col-1">
+                        <a href=""></a>
+                      </div>
+                    </li>
+                    <li class="d-flex border-0">
+                      <div>
+                        <p>
+                          共<span class="shop_txt1 font-weight-bold">1</span
+                          >件商品
+                        </p>
+                        <p>
+                          共计：<span class="shop_txt1 font-weight-bold"
+                            >￥148</span
+                          >
+                        </p>
+                      </div>
+                      <div class="check_btn"><a href="">去结算</a></div>
                     </li>
                   </ul>
                 </div>
@@ -103,6 +120,14 @@
       var mypost = document.getElementById('mypost')
       mypost.onclick = function () {
         parent.location.href = `search.html?pname=${pname.value}`
+      }
+      var show_car = document.getElementById('show_car')
+      var hid_car = document.getElementById('hid_car')
+      show_car.onmouseenter = function () {
+        hid_car.style.display = 'block'
+      }
+      hid_car.onmouseleave = function () {
+        hid_car.style.display = 'none'
       }
     </script>
   </body>

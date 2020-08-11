@@ -44,19 +44,19 @@
   border-right: 1px solid #575454;
   border-left: 1px solid #575454;
 }
-.t-right > div:last-child {
+#show_car {
   width: 194px;
 }
 /* 购物车精灵图 */
-.t-right > div:last-child > a {
+#show_car > a {
   text-align: center;
   display: inline-block;
   width: 194px;
   line-height: 30px;
   background: url(../images/bg.jpg) -168px -202px no-repeat;
 }
-.shop_car {
-  position: relative;
+#hid_car {
+  display: none;
 }
 .carbox1 {
   right: 0;
@@ -68,27 +68,53 @@
   z-index: 99999;
   width: 291px;
 }
-.car_pro {
+.biaoti {
+  color: #86777a !important;
+}
+.car_pro li {
   cursor: pointer;
   width: 275px;
   border-bottom: 1px dashed #575454;
-  margin: 0 8px;
+  margin: 0 auto;
   padding: 8px 0;
 }
 .car_pic > img {
   width: 60px;
   height: 98px;
 }
-.biaoti {
-  color: #86777a !important;
-}
-.single-price {
+.shop_txt1 {
   color: #91273b;
 }
 .total-price {
+  height: 20px;
+  line-height: 20px;
+  display: block;
   text-align: right;
-  color: #91273b;
   font-weight: bold;
+}
+.close_btn a {
+  background: url(../images/0050.gif) -64px -38px no-repeat;
+  width: 14px;
+  margin: 0 auto;
+  margin-top: 7px;
+  height: 14px;
+  display: block;
+}
+.close_btn a:hover {
+  background: url(../images/0050.gif) -64px -54px no-repeat;
+}
+.check_btn a {
+  position: absolute;
+  right: 8px;
+  bottom: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  background: #8a0403;
+  height: 25px;
+  line-height: 15px;
+  width: 50px;
+  padding: 5px;
 }
 .h-body {
   position: relative;
