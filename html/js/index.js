@@ -14,7 +14,7 @@ function h_cart(x) {
 //     success: function (result) {
 //       $(result).replaceAll('#header')
 //       $(
-//         `<link rel="stylesheet" type='text/css' href="../css/header.css"/>`
+//         `<link rel="stylesheet" type='text/css' href="css/header.css"/>`
 //       ).appendTo('head')
 //       $(`<script type='text/javascript' src="js/header.js"></script>`).appendTo(
 //         'head'

@@ -6,13 +6,13 @@
   width: 220px;
 }
 a {
-  color: #000;
+  color: #000 !important;
 }
 .t-color {
-  color: #91273b;
+  color: #91273b !important;
 }
 .l-top a:hover {
-  color: #91273b;
+  color: #91273b !important;
   text-decoration: none;
 }
 .ml_2 {
@@ -31,6 +31,38 @@ a {
 .l-top > .list-group li:hover {
   cursor: pointer;
   background: #e5ddd1;
+}
+.l-top > .list-group li {
+  position: relative;
+}
+.hid_type {
+  position: absolute;
+  left: 215px;
+  top: -1px;
+  z-index: 9999;
+  width: 340px;
+  padding: 6px 0;
+  background: #e5ddd1;
+  border: 2px solid #000;
+  border-top: 1px solid #000;
+  border-left: none;
+}
+.hid_type ul li {
+  border-bottom: 1px dashed #999;
+  margin: 7px 22px;
+}
+.hid_type > ul > li > a {
+  color: #351c20 !important;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 0 5px;
+}
+.hid_type > ul > li > a:first-child {
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  color: #000;
+  font-weight: bold;
 }
 .l-bottom {
   height: 222px;
@@ -118,7 +150,7 @@ a {
   height: 20px;
   margin-top: 10px;
   overflow: hidden;
-  color: #fff;
+  color: #fff !important;
   background-color: rgba(154, 141, 143, 0.9);
   cursor: pointer;
 }
@@ -155,11 +187,11 @@ a {
   color: #000;
 }
 .title a:first-child:hover {
-  color: #c00;
+  color: #c00 !important;
 }
 .price {
   font-size: 30px;
-  color: #8f0100;
+  color: #8f0100 !important;
 }
 .price span {
   font-size: 12px;

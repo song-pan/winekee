@@ -5,7 +5,7 @@
   box-shadow: 0 0 10px #50412d;
 }
 .header a {
-  color: #fff;
+  color: #fff !important;
 }
 .header a:hover {
   text-decoration: none;
@@ -19,7 +19,7 @@
 }
 .t-left {
   float: left;
-  color: #575454;
+  color: #575454 !important;
   padding-left: 10px;
 }
 .t-left > a {
@@ -31,7 +31,7 @@
 .t-right {
   display: flex;
   justify-content: flex-end;
-  color: #575454;
+  color: #575454 !important;
 }
 .t-right > div:first-child > a {
   padding-right: 10px;
@@ -40,7 +40,7 @@
   display: inline-block;
   padding: 0 10px;
   line-height: 15px;
-  color: #fff;
+  color: #fff !important;
   border-right: 1px solid #575454;
   border-left: 1px solid #575454;
 }
@@ -83,7 +83,7 @@
   height: 98px;
 }
 .shop_txt1 {
-  color: #91273b;
+  color: #91273b !important;
 }
 .total-price {
   height: 20px;
@@ -155,7 +155,7 @@
 .search_post {
   cursor: pointer;
   border: none;
-  color: #fff;
+  color: #fff !important;
   float: left;
   width: 65px;
   height: 33px;
@@ -166,13 +166,13 @@
 .s-bottom {
   clear: both;
   padding-top: 5px;
-  color: #ecd0c7;
+  color: #ecd0c7 !important;
 }
 .s-bottom a {
-  color: #ecd0c7;
+  color: #ecd0c7 !important;
 }
 .s-bottom a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 .h-bottom {
   width: 1200px;
@@ -187,6 +187,7 @@
   background-color: #000;
 }
 .h-bottom ul li {
+  cursor: pointer;
   font-size: 14px;
 }
 .h-bottom ul > li:nth-child(2) ~ li a {

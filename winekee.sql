@@ -14,6 +14,16 @@ CREATE TABLE shop (
   images VARCHAR(200),
   price DECIMAL(7,2)
 );
+CREATE TABLE shop_car (
+  cid INT PRIMARY KEY AUTO_INCREMENT,
+  pname VARCHAR(36) NOT NULL,
+  images VARCHAR(200),
+  price DECIMAL(7,2),
+  total DECIMAL(7,2),
+  pnum INT,
+  c_uid INT,
+  FOREIGN KEY(c_uid) REFERENCES w_user(uid)
+);
 INSERT INTO shop VALUES(null, '葡萄酒1号', 'images/0001.jpg', "100");
 INSERT INTO shop VALUES(null, '葡萄酒2号', 'images/0002.jpg', "100");
 INSERT INTO shop VALUES(null, '葡萄酒3号', 'images/0003.jpg', "100");
