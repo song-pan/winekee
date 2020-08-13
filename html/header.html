@@ -22,11 +22,11 @@
               <a href="#">我的账户</a>
               <span>订酒热线:400-883-1119</span>
             </div>
-            <div id="shop_car">
-              <div id="show_car">
+            <div class="shop_car">
+              <div class="show_car">
                 <a href="#">购物车</a>
               </div>
-              <div id="hid_car">
+              <div class="hid_car">
                 <div class="carbox1">
                   <ul class="car_pro">
                     <!-- <li class="text-center text-secondary py-3">
@@ -117,7 +117,8 @@
       mypost.onclick = function () {
         location.href = `search.html?pname=${pname.value}`
       }
-      var shop_car = document.getElementById('shop_car')
+      var shop_car = document.getElementsByClassName('shop_car')[0]
+      var hid_car = document.getElementsByClassName('hid_car')[0]
       // var hid_car = document.getElementById('hid_car')
       shop_car.onmouseenter = function () {
         hid_car.style.display = 'block'

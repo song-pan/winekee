@@ -19,6 +19,70 @@
         $('.header').load('header.html')
       })
     </script>
+    <!-- 右侧浮动购物车 -->
+    <div id="float_car" class="fixed_car" style="display: none;">
+      <div class="shop_car2">
+        <div class="show_car2">
+          <a href=" ">购物车</a>
+        </div>
+        <div class="hid_car2">
+          <div class="carbox1">
+            <ul class="car_pro">
+              <!-- <li class="text-center text-secondary py-3">
+                购物车中还没有商品，赶紧选购吧！
+              </li> -->
+              <li class="row no-gutters">
+                <div class="car_pic col-3">
+                  <img src="images/0022.jpg" />
+                </div>
+                <div class="col-8">
+                  <a class="biaoti" href="javascript:;"
+                    >卡内奇家族珍藏卡曼尼干红葡萄酒</a
+                  >
+                  <br />
+                  <span class="shop_txt1">￥148.00</span
+                  ><em class="text-secondary">X2</em>
+                  <span class="total-price shop_txt1">￥148.00</span>
+                </div>
+                <div class="close_btn col-1">
+                  <a href=""></a>
+                </div>
+              </li>
+              <li class="jiesuan d-flex border-0">
+                <div>
+                  <p>
+                    共<span class="shop_txt1 font-weight-bold">1</span>件商品
+                  </p>
+                  <p>
+                    共计：<span class="shop_txt1 font-weight-bold">￥148</span>
+                  </p>
+                </div>
+                <div class="check_btn check_btn2"><a href="#">去结算</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <script>
+          var shop_car2 = document.getElementsByClassName('shop_car2')[0]
+          var hid_car2 = document.getElementsByClassName('hid_car2')[0]
+          shop_car2.onmouseenter = function () {
+            hid_car2.style.display = 'block'
+          }
+          shop_car2.onmouseleave = function () {
+            hid_car2.style.display = 'none'
+          }
+          window.onscroll = function () {
+            var scrollTop =
+              document.documentElement.scrollTop || document.body.scrollTop
+            if (scrollTop > 100) {
+              float_car.style.display = 'block'
+            } else {
+              float_car.style.display = 'none'
+            }
+          }
+        </script>
+      </div>
+    </div>
     <div class="container-fluid p-0">
       <div class="section d-flex">
         <div
@@ -27,10 +91,10 @@
           <div class="l-top">
             <ul class="list-group">
               <li>
+                <div class="ml_2 font-weight-bold">
+                  种类
+                </div>
                 <div class="left_nav d-flex">
-                  <div class="ml_2 font-weight-bold">
-                    种类
-                  </div>
                   <div class="type">
                     <a class="t-color" href="#">红葡萄酒</a>
                     <a class="t-color" href="#">白葡萄酒</a>
@@ -95,10 +159,10 @@
             </ul>
             <ul class="list-group">
               <li>
+                <div class="ml_2 font-weight-bold">
+                  原产地
+                </div>
                 <div class="left_nav d-flex">
-                  <div class="ml_2 font-weight-bold">
-                    原产地
-                  </div>
                   <div class="type">
                     <a class="" href="#">法国</a>
                     <a class="" href="#">意大利</a>
@@ -163,10 +227,10 @@
             </ul>
             <ul class="list-group">
               <li class="border-bottom border-dark">
+                <div class="ml_2 font-weight-bold">
+                  场合
+                </div>
                 <div class="left_nav d-flex">
-                  <div class="ml_2 font-weight-bold">
-                    场合
-                  </div>
                   <div class="type">
                     <a class="" href="#">聚会</a>
                     <a class="" href="#">情侣</a>
@@ -669,6 +733,7 @@
           </ul>
         </div>
       </div>
+      <!-- 右边滚动事件购物车 -->
       <!-- 左边导航mouseover事件 -->
       <script>
         //查找要修改的元素

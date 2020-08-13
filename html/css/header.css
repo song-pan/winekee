@@ -5,7 +5,7 @@
   box-shadow: 0 0 10px #50412d;
 }
 .header a {
-  color: #fff !important;
+  color: #fff;
 }
 .header a:hover {
   text-decoration: none;
@@ -44,18 +44,18 @@
   border-right: 1px solid #575454;
   border-left: 1px solid #575454;
 }
-#show_car {
+.show_car {
   width: 194px;
 }
 /* 购物车精灵图 */
-#show_car > a {
+.show_car > a {
   text-align: center;
   display: inline-block;
   width: 194px;
   line-height: 30px;
   background: url(../images/bg.jpg) -168px -202px no-repeat;
 }
-#hid_car {
+.hid_car {
   display: none;
 }
 .carbox1 {
@@ -93,12 +93,12 @@
   font-weight: bold;
 }
 .close_btn a {
+  display: block;
   background: url(../images/0050.gif) -64px -38px no-repeat;
   width: 14px;
   margin: 0 auto;
   margin-top: 7px;
   height: 14px;
-  display: block;
 }
 .close_btn a:hover {
   background: url(../images/0050.gif) -64px -54px no-repeat;

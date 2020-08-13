@@ -6,7 +6,7 @@
   width: 220px;
 }
 a {
-  color: #000 !important;
+  color: #000;
 }
 .t-color {
   color: #91273b !important;
@@ -25,7 +25,7 @@ a {
   padding: 10px 0;
 }
 .l-top > .list-group > li > div:first-child {
-  font-size: 16px;
+  font-size: 15px;
   padding-bottom: 5px;
 }
 .l-top > .list-group li:hover {
@@ -69,7 +69,7 @@ a {
 }
 .l-bottom img {
   width: 100%;
-  height: 222px;
+  height: 230px;
 }
 .carousel .carousel-inner .carousel-item img {
   height: 480px;
@@ -198,4 +198,42 @@ a {
 }
 .f-bottom {
   margin-top: 100px;
+}
+/* 右侧浮动购物车 */
+.fixed_car a {
+  color: #fff;
+}
+.fixed_car a:hover {
+  text-decoration: none;
+}
+.shop_car2 {
+  position: fixed;
+  top: 50px;
+  right: 80px;
+}
+.hid_car2 {
+  display: none;
+}
+.show_car2 {
+  width: 125px;
+}
+/* 购物车精灵图 */
+.show_car2 > a {
+  text-align: center;
+  display: inline-block;
+  width: 125px;
+  line-height: 30px;
+  background: url(../images/bg.jpg) -250px -658px no-repeat;
+}
+.hid_car {
+  display: none;
+}
+.jiesuan {
+  position: relative;
+}
+.jiesuan > div > p + p {
+  padding: 8px 0;
+}
+.check_btn2 a {
+  top: 15px !important;
 }
