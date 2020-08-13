@@ -20,8 +20,8 @@ CREATE TABLE shop_car (
   images VARCHAR(200),
   price DECIMAL(7,2),
   pnum INT,
-  c_uid INT,
-  FOREIGN KEY(c_uid) REFERENCES w_user(uid)
+  uid INT,
+  FOREIGN KEY(uid) REFERENCES w_user(uid)
 );
 INSERT INTO shop VALUES(null, '葡萄酒1号', 'images/0001.jpg', "100");
 INSERT INTO shop VALUES(null, '葡萄酒2号', 'images/0002.jpg', "200");

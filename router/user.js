@@ -28,7 +28,7 @@ router.post('/register', (req, res) => {
     }
   })
 })
-//添加search路由
+//添加商品名search路由
 router.get('/search', (req, res) => {
   pool.query(
     'select * from shop where pname like ?',
@@ -42,6 +42,32 @@ router.get('/search', (req, res) => {
       }
     }
   )
+})
+//添加购物车search路由
+router.get('/searchCar', (req, res) => {
+  pool.query(
+    'select * from shop_car where uid=?',
+    [req.query.uid],
+    (err, result) => {
+      if (err) throw err
+      if (result.length > 0) {
+        res.send(result)
+      } else {
+        res.send('0')
+      }
+    }
+  )
+})
+//添加购物车insert路由
+router.post('/updateCar', (req, res) => {
+  pool.query('insert into shop_car set ?', [req.body], (err, result) => {
+    if (err) throw err
+    if (result.affectedRows > 0) {
+      res.send('1')
+    } else {
+      res.send('0')
+    }
+  })
 })
 //导出路由器对象router
 module.exports = router

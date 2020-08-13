@@ -12,16 +12,14 @@
     <link rel="stylesheet" type="text/css" href="css/login.css" />
   </head>
   <body>
-    <iframe
-      class="d-block"
-      src="header.html"
-      width="100%"
-      height="135px"
-      scrolling="no"
-      frameborder="no"
-    ></iframe>
+    <div class="header"></div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.header').load('header.html')
+      })
+    </script>
     <div class="container-fluid p-0">
-      <div class="content border">
+      <div class="content border border-top-0">
         <h2 class="title-txt1">
           用户登录 <span class="title-txt2">User Login</span>
         </h2>
